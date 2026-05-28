@@ -46,23 +46,23 @@
 
 <!-- 工具 & 框架 -->
 
-![Tauri](https://img.shields.io/badge/Tauri-2-FFC131?style=flat-square&logo=tauri&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-DEA584?style=flat-square&logo=rust&logoColor=white)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Tauri](https://img.shields.io/badge/Tauri-2-FFC131?style=for-the-badge&logo=tauri&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-DEA584?style=for-the-badge&logo=rust&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 <!-- 领域 & 工具 -->
 
-![ComfyUI](https://img.shields.io/badge/ComfyUI-111827?style=flat-square)
-![AI Coding](https://img.shields.io/badge/AI%20Coding-2563EB?style=flat-square)
-![Claude](https://img.shields.io/badge/Claude-D97706?style=flat-square&logo=anthropic&logoColor=white)
-![Cursor](https://img.shields.io/badge/Cursor-111827?style=flat-square)
-![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-9333EA?style=flat-square)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
+![ComfyUI](https://img.shields.io/badge/ComfyUI-111827?style=for-the-badge)
+![AI Coding](https://img.shields.io/badge/AI%20Coding-2563EB?style=for-the-badge)
+![Claude](https://img.shields.io/badge/Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
+![Cursor](https://img.shields.io/badge/Cursor-111827?style=for-the-badge)
+![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-9333EA?style=for-the-badge)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
 <br/>
 
@@ -80,8 +80,8 @@
 
 一套遵循 Agent Skills 规范的生产级技能集合，通过 `npx skills add` 一键安装。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeAIA-skills?style=flat-square&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeAIA-skills?style=flat-square&color=A855F7)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=A855F7)
 
 </td>
 <td width="50%">
@@ -90,8 +90,8 @@
 
 基于 Tauri 2 + React 19 的 Markdown 桌面阅读器，主打极致渲染与丝滑阅读。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeMD?style=flat-square&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeMD?style=flat-square&color=A855F7)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeMD?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeMD?style=for-the-badge&color=A855F7)
 
 </td>
 </tr>
@@ -102,8 +102,8 @@
 
 基于 Tauri v2 的 llama.cpp 桌面启动器 —— 无需命令行，从零开始本地大模型对话。集成 GUI/TUI 双界面、运行时管理、HuggingFace 模型下载、GGUF 解析与嵌入式聊天。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/catapult-cn?style=flat-square&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/catapult-cn?style=flat-square&color=A855F7)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/catapult-cn?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/catapult-cn?style=for-the-badge&color=A855F7)
 
 </td>
 </tr>
