@@ -14,14 +14,14 @@
 <br/>
 
 <!-- ===== 区块2：社交徽章 ===== -->
-<!-- 使用 flat-square 风格，颜色与品牌色系一致 -->
+<!-- 使用 for-the-badge 风格，颜色与品牌色系一致 -->
 
 <div align="center">
 
-[![Bilibili](https://img.shields.io/badge/B站-宝藏二哥AIA-00D4FF?style=flat-square&logo=bilibili&logoColor=white)](https://space.bilibili.com/67221461)
-[![Zhihu](https://img.shields.io/badge/知乎-宝藏二哥AIA-0084FF?style=flat-square&logo=zhihu&logoColor=white)](https://www.zhihu.com/people/meli55a/posts)
-[![WeChat](https://img.shields.io/badge/公众号-宝藏二哥AIA-07C160?style=flat-square&logo=wechat&logoColor=white)](mailto:maplechastity@gmail.com)
-[![Email](https://img.shields.io/badge/Email-maplechastity@gmail.com-A855F7?style=flat-square&logo=gmail&logoColor=white)](mailto:maplechastity@gmail.com)
+[![BILIBILI](https://img.shields.io/badge/BILIBILI-宝藏二哥AIA-00D4FF?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/67221461)
+[![ZHIHU](https://img.shields.io/badge/ZHIHU-宝藏二哥AIA-0084FF?style=for-the-badge&logo=zhihu&logoColor=white)](https://www.zhihu.com/people/meli55a/posts)
+[![WECHAT](https://img.shields.io/badge/WECHAT-宝藏二哥AIA-07C160?style=for-the-badge&logo=wechat&logoColor=white)](mailto:maplechastity@gmail.com)
+[![EMAIL](https://img.shields.io/badge/EMAIL-maplechastity@gmail.com-A855F7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maplechastity@gmail.com)
 
 </div>
 
