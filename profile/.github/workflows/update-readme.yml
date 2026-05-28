@@ -1,0 +1,45 @@
+# 定期刷新 README 以触发 GitHub 重新渲染 shields.io 徽章缓存
+# shields.io 徽章本身是动态的（实时查 GitHub API），
+# 此 workflow 确保 README 定期被 commit，触发 GitHub 页面缓存刷新
+
+name: Update README
+
+on:
+  schedule:
+    # 每 6 小时执行一次（UTC 时间 00:00, 06:00, 12:00, 18:00）
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch repo stats
+        id: stats
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 获取各仓库星标数
+          for repo in ErgeAIA-skills ErgeMD catapult-cn; do
+            stars=$(curl -s -H "Authorization: token $GH_TOKEN" \
+              "https://api.github.com/repos/ErgeAIA/$repo" | jq -r '.stargazers_count')
+            echo "${repo}_stars=$stars" >> $GITHUB_OUTPUT
+          done
+
+      - name: Update timestamp
+        run: |
+          echo "<!-- Last updated: $(date -u +'%Y-%m-%d %H:%M UTC') -->" > .last-updated
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .last-updated
+          git diff --cached --quiet || git commit -m "chore: refresh README stats"
+          git push
