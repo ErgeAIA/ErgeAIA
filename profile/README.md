@@ -117,9 +117,9 @@
 
 <div align="center">
 
-![Public Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/ErgeAIA&query=$.public_repos&label=Public%20Repos&style=flat-square&color=00D4FF&logo=github&logoColor=white)
-![Total Stars](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/ErgeAIA&query=$.public_gists&label=Gists&style=flat-square&color=A855F7&logo=github&logoColor=white)
-![Followers](https://img.shields.io/github/followers/ErgeAIA?style=flat-square&color=FF6D00&logo=github&logoColor=white)
+<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0A1628&title_color=00D4FF&icon_color=A855F7&text_color=C0C0C0" />
+&nbsp;&nbsp;
+<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api/top-langs/?username=ErgeAIA&layout=compact&theme=tokyonight&hide_border=true&bg_color=0A1628&title_color=00D4FF&text_color=C0C0C0" />
 
 </div>
 
