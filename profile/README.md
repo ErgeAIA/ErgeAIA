@@ -20,8 +20,8 @@
 
 [![BILIBILI](https://img.shields.io/badge/BILIBILI-宝藏二哥AIA-00D4FF?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/67221461)
 [![ZHIHU](https://img.shields.io/badge/ZHIHU-宝藏二哥AIA-0084FF?style=for-the-badge&logo=zhihu&logoColor=white)](https://www.zhihu.com/people/meli55a/posts)
-[![WECHAT](https://img.shields.io/badge/WECHAT-宝藏二哥AIA-07C160?style=for-the-badge&logo=wechat&logoColor=white)](mailto:maplechastity@gmail.com)
-[![EMAIL](https://img.shields.io/badge/EMAIL-maplechastity@gmail.com-A855F7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maplechastity@gmail.com)
+[![WECHAT](https://img.shields.io/badge/WECHAT-宝藏二哥AIA-07C160?style=for-the-badge&logo=wechat&logoColor=white)](mailto:ergeaia@gmail.com)
+[![EMAIL](https://img.shields.io/badge/EMAIL-ergeaia@gmail.com-A855F7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ergeaia@gmail.com)
 
 </div>
 
@@ -129,7 +129,7 @@
 
 <div align="center">
 
-![ErgeAIA's Contribution Graph](https://ghchart.rshah.org/00D4FF/ErgeAIA)
+![ErgeAIA's GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ErgeAIA&theme=tokyonight&hide_border=true&background=0A1628&ring=00D4FF&fire=A855F7&currStreakLabel=00D4FF&sideLabels=C0C0C0&dates=C0C0C0)
 
 </div>
 
@@ -165,7 +165,7 @@
   {B站链接}         → https://space.bilibili.com/67221461
   {知乎链接}        → https://www.zhihu.com/people/meli55a/posts
   {公众号名称}      → 宝藏二哥AIA
-  {邮箱}            → maplechastity@gmail.com
+  {邮箱}            → ergeaia@gmail.com
   {项目1链接}       → https://github.com/ErgeAIA/ErgeAIA-skills
   {项目2链接}       → https://github.com/ErgeAIA/ErgeMD
   {项目3链接}       → https://github.com/ErgeAIA/catapult-cn
