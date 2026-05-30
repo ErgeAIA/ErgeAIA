@@ -129,7 +129,7 @@
 
 <div align="center">
 
-![ErgeAIA's GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ErgeAIA&theme=tokyonight&hide_border=true&background=0A1628&ring=00D4FF&fire=A855F7&currStreakLabel=00D4FF&sideLabels=C0C0C0&dates=C0C0C0)
+![ErgeAIA's GitHub Contributions](https://gitblend.com/api/contributions/github?username=ErgeAIA)
 
 </div>
 
