@@ -130,7 +130,7 @@
 <div align="center">
 
 <!-- GitBlend - 20+ themes available: github-dark, dracula, nord, synthwave, ocean, cyberpunk, tokyo, etc. -->
-![ErgeAIA's GitHub Contributions](https://gitblend.com/api/contributions/github?username=ErgeAIA&amp;theme=cyberpunk)
+![ErgeAIA's GitHub Contributions](https://gitblend.com/api/contributions/github?username=ErgeAIA&amp;theme=cyberpunk&amp;t=1)
 
 </div>
 
