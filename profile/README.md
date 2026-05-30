@@ -54,13 +54,19 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
+<!-- AI 工具 -->
+
+![Claude](https://img.shields.io/badge/Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
+![Cursor](https://img.shields.io/badge/Cursor-111827?style=for-the-badge)
+![Trae](https://img.shields.io/badge/Trae-00D4FF?style=for-the-badge)
+![Open%20Code](https://img.shields.io/badge/Open%20Code-00A67E?style=for-the-badge)
+![Codex](https://img.shields.io/badge/Codex-412991?style=for-the-badge)
+![AI Coding](https://img.shields.io/badge/AI%20Coding-2563EB?style=for-the-badge)
+![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-9333EA?style=for-the-badge)
+
 <!-- 领域 & 工具 -->
 
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-111827?style=for-the-badge)
-![AI Coding](https://img.shields.io/badge/AI%20Coding-2563EB?style=for-the-badge)
-![Claude](https://img.shields.io/badge/Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
-![Cursor](https://img.shields.io/badge/Cursor-111827?style=for-the-badge)
-![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-9333EA?style=for-the-badge)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
