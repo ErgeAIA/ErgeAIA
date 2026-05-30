@@ -129,8 +129,8 @@
 
 <div align="center">
 
-<!-- ghchart - 自定义品牌颜色 -->
-![ErgeAIA's GitHub Contributions](https://ghchart.rshah.org/00D4FF/ErgeAIA)
+<!-- Green Wall - Midnight Theme -->
+<img src="https://green-wall-qslklk0pz-ergeaia.vercel.app/api/og/share/ErgeAIA?theme=Midnight" alt="ErgeAIA's GitHub Contributions" />
 
 </div>
 
