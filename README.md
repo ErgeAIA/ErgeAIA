@@ -130,7 +130,7 @@
 <div align="center">
 
 <!-- Green Wall - Midnight Theme -->
-<img src="https://green-wall-qslklk0pz-ergeaia.vercel.app/api/og/share/ErgeAIA?theme=Midnight" alt="ErgeAIA's GitHub Contributions" />
+![ErgeAIA's GitHub Contributions](https://green-wall-qslklk0pz-ergeaia.vercel.app/api/og/share/ErgeAIA?theme=Midnight)
 
 </div>
 
