@@ -117,124 +117,13 @@
 
 <div align="center">
 
-<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0A1628&title_color=00D4FF&icon_color=A855F7&text_color=C0C0C0" />
+<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=shades-of-purple&hide_border=true&bg_color=0A1628&title_color=00D4FF&icon_color=A855F7&text_color=C0C0C0" />
 &nbsp;&nbsp;
-<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api/top-langs/?username=ErgeAIA&layout=compact&theme=tokyonight&hide_border=true&bg_color=0A1628&title_color=00D4FF&text_color=C0C0C0" />
+<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api/top-langs/?username=ErgeAIA&layout=compact&theme=shades-of-purple&hide_border=true&bg_color=0A1628&title_color=00D4FF&text_color=C0C0C0" />
 
 </div>
 
 <br/>
-
-## 主题预览（75 个可选主题）
-
-<!-- 所有 github-readme-stats 主题预览 -->
-
-<details>
-<summary>点击展开/收起所有主题</summary>
-
-<br/>
-
-### 深色主题
-
-| Theme                    | Preview                                                                                                                                               |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **dark**                 | ![dark](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=dark&hide_border=true)                                 |
-| **radical**              | ![radical](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=radical&hide_border=true)                           |
-| **merko**                | ![merko](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=merko&hide_border=true)                               |
-| **tokyonight** ⭐         | ![tokyonight](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=tokyonight&hide_border=true)                     |
-| **onedark**              | ![onedark](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=onedark&hide_border=true)                           |
-| **dracula**              | ![dracula](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=dracula&hide_border=true)                           |
-| **monokai**              | ![monokai](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=monokai&hide_border=true)                           |
-| **nord**                 | ![nord](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=nord&hide_border=true)                                 |
-| **nightowl**             | ![nightowl](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=nightowl&hide_border=true)                         |
-| **cobalt**               | ![cobalt](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=cobalt&hide_border=true)                             |
-| **cobalt2**              | ![cobalt2](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=cobalt2&hide_border=true)                           |
-| **synthwave**            | ![synthwave](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=synthwave&hide_border=true)                       |
-| **outrun**               | ![outrun](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=outrun&hide_border=true)                             |
-| **neon**                 | ![neon](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=neon&hide_border=true)                                 |
-| **prussian**             | ![prussian](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=prussian&hide_border=true)                         |
-| **github_dark**          | ![github_dark](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=github_dark&hide_border=true)                   |
-| **github_dark_dimmed**   | ![github_dark_dimmed](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=github_dark_dimmed&hide_border=true)     |
-| **algolia**              | ![algolia](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=algolia&hide_border=true)                           |
-| **bear**                 | ![bear](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=bear&hide_border=true)                                 |
-| **vue-dark**             | ![vue-dark](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=vue-dark&hide_border=true)                         |
-| **blue-green**           | ![blue-green](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=blue-green&hide_border=true)                     |
-| **ayu-mirage**           | ![ayu-mirage](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=ayu-mirage&hide_border=true)                     |
-| **midnight-purple**      | ![midnight-purple](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=midnight-purple&hide_border=true)           |
-| **material-palenight**   | ![material-palenight](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=material-palenight&hide_border=true)     |
-| **omni**                 | ![omni](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=omni&hide_border=true)                                 |
-| **react**                | ![react](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=react&hide_border=true)                               |
-| **blueberry**            | ![blueberry](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=blueberry&hide_border=true)                       |
-| **ocean_dark**           | ![ocean_dark](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=ocean_dark&hide_border=true)                     |
-| **city_lights**          | ![city_lights](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=city_lights&hide_border=true)                   |
-| **discord_old_blurple**  | ![discord_old_blurple](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=discord_old_blurple&hide_border=true)   |
-| **aura_dark**            | ![aura_dark](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=aura_dark&hide_border=true)                       |
-| **panda**                | ![panda](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=panda&hide_border=true)                               |
-| **noctis_minimus**       | ![noctis_minimus](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=noctis_minimus&hide_border=true)             |
-| **jolly**                | ![jolly](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=jolly&hide_border=true)                               |
-| **apprentice**           | ![apprentice](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=apprentice&hide_border=true)                     |
-| **rose_pine**            | ![rose_pine](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=rose_pine&hide_border=true)                       |
-| **one_dark_pro**         | ![one_dark_pro](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=one_dark_pro&hide_border=true)                 |
-| **calm_pink**            | ![calm_pink](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=calm_pink&hide_border=true)                       |
-| **blue_navy**            | ![blue_navy](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=blue_navy&hide_border=true)                       |
-| **gruvbox**              | ![gruvbox](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=gruvbox&hide_border=true)                           |
-| **solarized-dark**       | ![solarized-dark](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=solarized-dark&hide_border=true)             |
-| **gotham**               | ![gotham](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=gotham&hide_border=true)                             |
-| **aura**                 | ![aura](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=aura&hide_border=true)                                 |
-| **catppuccin_mocha**     | ![catppuccin_mocha](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=catppuccin_mocha&hide_border=true)         |
-| **highcontrast**         | ![highcontrast](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=highcontrast&hide_border=true)                 |
-| **chartreuse-dark**      | ![chartreuse-dark](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=chartreuse-dark&hide_border=true)           |
-| **vision-friendly-dark** | ![vision-friendly-dark](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=vision-friendly-dark&hide_border=true) |
-| **maroongold**           | ![maroongold](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=maroongold&hide_border=true)                     |
-| **slateorange**          | ![slateorange](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=slateorange&hide_border=true)                   |
-| **calm**                 | ![calm](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=calm&hide_border=true)                                 |
-| **shades-of-purple**     | ![shades-of-purple](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=shades-of-purple&hide_border=true)         |
-| **holi**                 | ![holi](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=holi&hide_border=true)                                 |
-| **swift**                | ![swift](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=swift&hide_border=true)                               |
-| **kacho_ga**             | ![kacho_ga](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=kacho_ga&hide_border=true)                         |
-| **codeSTACKr**           | ![codeSTACKr](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=codeSTACKr&hide_border=true)                     |
-| **yeblu**                | ![yeblu](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=yeblu&hide_border=true)                               |
-| **moltack**              | ![moltack](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=moltack&hide_border=true)                           |
-| **date_night**           | ![date_night](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=date_night&hide_border=true)                     |
-
-<br/>
-
-### 浅色主题
-
-| Theme                | Preview                                                                                                                                       |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **default**          | ![default](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=default&hide_border=true)                   |
-| **default_repocard** | ![default_repocard](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=default_repocard&hide_border=true) |
-| **vue**              | ![vue](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=vue&hide_border=true)                           |
-| **buefy**            | ![buefy](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=buefy&hide_border=true)                       |
-| **gruvbox_light**    | ![gruvbox_light](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=gruvbox_light&hide_border=true)       |
-| **solarized-light**  | ![solarized-light](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=solarized-light&hide_border=true)   |
-| **graywhite**        | ![graywhite](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=graywhite&hide_border=true)               |
-| **rose**             | ![rose](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=rose&hide_border=true)                         |
-| **catppuccin_latte** | ![catppuccin_latte](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=catppuccin_latte&hide_border=true) |
-| **flag-india**       | ![flag-india](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=flag-india&hide_border=true)             |
-| **great-gatsby**     | ![great-gatsby](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=great-gatsby&hide_border=true)         |
-| **darcula**          | ![darcula](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=darcula&hide_border=true)                   |
-
-<br/>
-
-### 特殊主题
-
-| Theme                | Preview                                                                                                                                       |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **transparent**      | ![transparent](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=transparent&hide_border=true)           |
-| **shadow_red**       | ![shadow_red](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=shadow_red&hide_border=true)             |
-| **shadow_green**     | ![shadow_green](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=shadow_green&hide_border=true)         |
-| **shadow_blue**      | ![shadow_blue](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=shadow_blue&hide_border=true)           |
-| **ambient_gradient** | ![ambient_gradient](https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=ambient_gradient&hide_border=true) |
-
-<br/>
-
-</details>
-
-<br/>
-
-**提示：点击上方 "点击展开/收起所有主题" 来查看所有 75 个主题的预览效果，选择你喜欢的主题后告诉我，我会帮你替换！**
 
 <!-- ===== 区块7：贡献热力图 ===== -->
 
