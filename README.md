@@ -7,7 +7,7 @@
 
 <br/>
 
-`AI 软件创造者` `全栈工程师` `产品经理` `Vibe Coding 实践者` `AI 绘画爱好者`
+`独立开发者` `全栈工程师` `产品经理` `Vibe Coding 实践者` `AI 绘画爱好者`
 
 </div>
 
@@ -115,6 +115,18 @@
 
 </td>
 </tr>
+<tr>
+<td colspan="2">
+
+### [claude-code-bootstrap](https://github.com/ErgeAIA/claude-code-bootstrap)
+
+一键拉起 Claude Code 工作环境（Windows PowerShell），可选部署 hooks 工作流，免去手动配环境、写 settings.json、拉脚本的繁琐。
+
+![Stars](https://img.shields.io/github/stars/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=A855F7)
+
+</td>
+</tr>
 </table>
 
 <br/>
@@ -170,7 +182,7 @@
 <!-- 待替换占位符：
   {用户名}          → ErgeAIA
   {称呼}            → 宝藏二哥AIA
-  {身份标签}        → AI 软件创造者 / 全栈工程师 / AI绘画爱好者
+  {身份标签}        → 独立开发者 / 全栈工程师 / AI绘画爱好者
   {B站链接}         → https://space.bilibili.com/67221461
   {知乎链接}        → https://www.zhihu.com/people/meli55a/posts
   {公众号名称}      → 宝藏二哥AIA

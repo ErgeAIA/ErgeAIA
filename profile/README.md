@@ -115,6 +115,18 @@
 
 </td>
 </tr>
+<tr>
+<td colspan="2">
+
+### [claude-code-bootstrap](https://github.com/ErgeAIA/claude-code-bootstrap)
+
+一键拉起 Claude Code 工作环境（Windows PowerShell），可选部署 hooks 工作流，免去手动配环境、写 settings.json、拉脚本的繁琐。
+
+![Stars](https://img.shields.io/github/stars/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=A855F7)
+
+</td>
+</tr>
 </table>
 
 <br/>
