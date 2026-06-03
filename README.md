@@ -84,22 +84,22 @@
 <tr>
 <td width="50%">
 
-### [ErgeAIA-skills](https://github.com/ErgeAIA/ErgeAIA-skills)
-
-一套遵循 Agent Skills 规范的生产级技能集合，通过 `npx skills add` 一键安装。
-
-![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=A855F7)
-
-</td>
-<td width="50%">
-
 ### [ErgeMD](https://github.com/ErgeAIA/ErgeMD)
 
 基于 Tauri 2 + React 19 的 Markdown 桌面阅读器，主打极致渲染与丝滑阅读。
 
 ![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeMD?style=for-the-badge&color=00D4FF)
 ![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeMD?style=for-the-badge&color=A855F7)
+
+</td>
+<td width="50%">
+
+### [claude-code-bootstrap](https://github.com/ErgeAIA/claude-code-bootstrap)
+
+一键拉起 Claude Code 工作环境（Windows PowerShell），可选部署 hooks 工作流。
+
+![Stars](https://img.shields.io/github/stars/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=A855F7)
 
 </td>
 </tr>
@@ -116,12 +116,12 @@
 </td>
 <td width="50%">
 
-### [claude-code-bootstrap](https://github.com/ErgeAIA/claude-code-bootstrap)
+### [ErgeAIA-skills](https://github.com/ErgeAIA/ErgeAIA-skills)
 
-一键拉起 Claude Code 工作环境（Windows PowerShell），可选部署 hooks 工作流。
+一套遵循 Agent Skills 规范的生产级技能集合，通过 `npx skills add` 一键安装。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=A855F7)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=A855F7)
 
 </td>
 </tr>
