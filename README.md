@@ -90,16 +90,18 @@
 
 ![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeMD?style=for-the-badge&color=00D4FF)
 ![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeMD?style=for-the-badge&color=A855F7)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/ErgeMD/total?style=for-the-badge&color=FF8000)
 
 </td>
 <td width="50%">
 
-### [claude-code-bootstrap](https://github.com/ErgeAIA/claude-code-bootstrap)
+### [ErgeHash](https://github.com/ErgeAIA/ErgeHash)
 
-一键拉起 Claude Code 工作环境（Windows PowerShell），可选部署 hooks 工作流。
+跨平台文件哈希校验工具（Tauri 2 + Rust + React），本地优先、零上传、极速批量校验。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=A855F7)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeHash?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeHash?style=for-the-badge&color=A855F7)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/ErgeHash/total?style=for-the-badge&color=FF8000)
 
 </td>
 </tr>
@@ -112,16 +114,17 @@
 
 ![Stars](https://img.shields.io/github/stars/ErgeAIA/catapult-cn?style=for-the-badge&color=00D4FF)
 ![Updated](https://img.shields.io/github/last-commit/ErgeAIA/catapult-cn?style=for-the-badge&color=A855F7)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/catapult-cn/total?style=for-the-badge&color=FF8000)
 
 </td>
 <td width="50%">
 
-### [ErgeAIA-skills](https://github.com/ErgeAIA/ErgeAIA-skills)
+### [claude-code-bootstrap](https://github.com/ErgeAIA/claude-code-bootstrap)
 
-一套遵循 Agent Skills 规范的生产级技能集合，通过 `npx skills add` 一键安装。
+一键拉起 Claude Code 工作环境（Windows PowerShell），可选部署 hooks 工作流。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=A855F7)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=A855F7)
 
 </td>
 </tr>
@@ -185,9 +188,10 @@
   {知乎链接}        → https://www.zhihu.com/people/meli55a/posts
   {公众号名称}      → 宝藏二哥AIA
   {邮箱}            → ergeaia@gmail.com
-  {项目1链接}       → https://github.com/ErgeAIA/ErgeAIA-skills
-  {项目2链接}       → https://github.com/ErgeAIA/ErgeMD
+  {项目1链接}       → https://github.com/ErgeAIA/ErgeMD
+  {项目2链接}       → https://github.com/ErgeAIA/ErgeHash
   {项目3链接}       → https://github.com/ErgeAIA/catapult-cn
+  {项目4链接}       → https://github.com/ErgeAIA/claude-code-bootstrap
   {品牌语录}        → "我走过的弯路，你不必再走！"
   {座右铭}          → "生命不息，折腾不止"
   {Slogan}          → "AI 不该有门槛" / "把AI从天边拉到手边"
