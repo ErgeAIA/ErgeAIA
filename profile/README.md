@@ -7,7 +7,7 @@
 
 <br/>
 
-`AI 软件创造者` `全栈工程师` `产品经理` `Vibe Coding 实践者` `AI 绘画爱好者`
+`独立开发者` `全栈工程师` `产品经理` `Vibe Coding 实践者` `AI 绘画爱好者`
 
 </div>
 
@@ -84,12 +84,58 @@
 <tr>
 <td width="50%">
 
+### [AI Vault](https://ergeaia.github.io/aivault-site)
+
+本地优先的 AI 创作者工作台：统一管理技能、提示词、MCP、ComfyUI 工作流，一键分发到 36+ Agent。
+
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/updates-dist/total?style=for-the-badge&color=FF8000)
+
+</td>
+<td width="50%">
+
+### [写意](https://ergeaia.github.io/xieyi/)
+
+Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为可浏览的组件库 + 概念库。
+
+![Stars](https://img.shields.io/github/stars/ErgeAIA/xieyi?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/xieyi?style=for-the-badge&color=A855F7)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
 ### [ErgeMD](https://github.com/ErgeAIA/ErgeMD)
 
 基于 Tauri 2 + React 19 的 Markdown 桌面阅读器，主打极致渲染与丝滑阅读。
 
 ![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeMD?style=for-the-badge&color=00D4FF)
 ![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeMD?style=for-the-badge&color=A855F7)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/ErgeMD/total?style=for-the-badge&color=FF8000)
+
+</td>
+<td width="50%">
+
+### [ErgeHash](https://github.com/ErgeAIA/ErgeHash)
+
+跨平台文件哈希校验工具（Tauri 2 + Rust + React），本地优先、零上传、极速批量校验。
+
+![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeHash?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeHash?style=for-the-badge&color=A855F7)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/ErgeHash/total?style=for-the-badge&color=FF8000)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### [catapult-cn](https://github.com/ErgeAIA/catapult-cn)
+
+基于 Tauri v2 的 llama.cpp 桌面启动器 —— 无需命令行，从零开始本地大模型对话。
+
+![Stars](https://img.shields.io/github/stars/ErgeAIA/catapult-cn?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/catapult-cn?style=for-the-badge&color=A855F7)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/catapult-cn/total?style=for-the-badge&color=FF8000)
 
 </td>
 <td width="50%">
@@ -103,28 +149,6 @@
 
 </td>
 </tr>
-<tr>
-<td width="50%">
-
-### [catapult-cn](https://github.com/ErgeAIA/catapult-cn)
-
-基于 Tauri v2 的 llama.cpp 桌面启动器 —— 无需命令行，从零开始本地大模型对话。
-
-![Stars](https://img.shields.io/github/stars/ErgeAIA/catapult-cn?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/catapult-cn?style=for-the-badge&color=A855F7)
-
-</td>
-<td width="50%">
-
-### [ErgeAIA-skills](https://github.com/ErgeAIA/ErgeAIA-skills)
-
-一套遵循 Agent Skills 规范的生产级技能集合，通过 `npx skills add` 一键安装。
-
-![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeAIA-skills?style=for-the-badge&color=A855F7)
-
-</td>
-</tr>
 </table>
 
 <br/>
@@ -135,9 +159,9 @@
 
 <div align="center">
 
-<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0A1628&title_color=00D4FF&icon_color=A855F7&text_color=C0C0C0" />
+<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=shades-of-purple&hide_border=true&bg_color=0A1628&title_color=00D4FF&icon_color=A855F7&text_color=C0C0C0" />
 &nbsp;&nbsp;
-<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api/top-langs/?username=ErgeAIA&layout=compact&theme=tokyonight&hide_border=true&bg_color=0A1628&title_color=00D4FF&text_color=C0C0C0" />
+<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api/top-langs/?username=ErgeAIA&layout=compact&theme=shades-of-purple&hide_border=true&bg_color=0A1628&title_color=00D4FF&text_color=C0C0C0" />
 
 </div>
 
@@ -180,14 +204,17 @@
 <!-- 待替换占位符：
   {用户名}          → ErgeAIA
   {称呼}            → 宝藏二哥AIA
-  {身份标签}        → AI 软件创造者 / 全栈工程师 / AI绘画爱好者
+  {身份标签}        → 独立开发者 / 全栈工程师 / AI绘画爱好者
   {B站链接}         → https://space.bilibili.com/67221461
   {知乎链接}        → https://www.zhihu.com/people/meli55a/posts
   {公众号名称}      → 宝藏二哥AIA
   {邮箱}            → ergeaia@gmail.com
-  {项目1链接}       → https://github.com/ErgeAIA/ErgeAIA-skills
-  {项目2链接}       → https://github.com/ErgeAIA/ErgeMD
-  {项目3链接}       → https://github.com/ErgeAIA/catapult-cn
+  {项目1链接}       → https://ergeaia.github.io/aivault-site
+  {项目2链接}       → https://ergeaia.github.io/xieyi/
+  {项目3链接}       → https://github.com/ErgeAIA/ErgeMD
+  {项目4链接}       → https://github.com/ErgeAIA/ErgeHash
+  {项目5链接}       → https://github.com/ErgeAIA/catapult-cn
+  {项目6链接}       → https://github.com/ErgeAIA/claude-code-bootstrap
   {品牌语录}        → "我走过的弯路，你不必再走！"
   {座右铭}          → "生命不息，折腾不止"
   {Slogan}          → "AI 不该有门槛" / "把AI从天边拉到手边"

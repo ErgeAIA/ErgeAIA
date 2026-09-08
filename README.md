@@ -84,6 +84,27 @@
 <tr>
 <td width="50%">
 
+### [AI Vault](https://ergeaia.github.io/aivault-site)
+
+本地优先的 AI 创作者工作台：统一管理技能、提示词、MCP、ComfyUI 工作流，一键分发到 36+ Agent。
+
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/updates-dist/total?style=for-the-badge&color=FF8000)
+
+</td>
+<td width="50%">
+
+### [写意](https://ergeaia.github.io/xieyi/)
+
+Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为可浏览的组件库 + 概念库。
+
+![Stars](https://img.shields.io/github/stars/ErgeAIA/xieyi?style=for-the-badge&color=00D4FF)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/xieyi?style=for-the-badge&color=A855F7)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
 ### [ErgeMD](https://github.com/ErgeAIA/ErgeMD)
 
 基于 Tauri 2 + React 19 的 Markdown 桌面阅读器，主打极致渲染与丝滑阅读。
@@ -188,10 +209,12 @@
   {知乎链接}        → https://www.zhihu.com/people/meli55a/posts
   {公众号名称}      → 宝藏二哥AIA
   {邮箱}            → ergeaia@gmail.com
-  {项目1链接}       → https://github.com/ErgeAIA/ErgeMD
-  {项目2链接}       → https://github.com/ErgeAIA/ErgeHash
-  {项目3链接}       → https://github.com/ErgeAIA/catapult-cn
-  {项目4链接}       → https://github.com/ErgeAIA/claude-code-bootstrap
+  {项目1链接}       → https://ergeaia.github.io/aivault-site
+  {项目2链接}       → https://ergeaia.github.io/xieyi/
+  {项目3链接}       → https://github.com/ErgeAIA/ErgeMD
+  {项目4链接}       → https://github.com/ErgeAIA/ErgeHash
+  {项目5链接}       → https://github.com/ErgeAIA/catapult-cn
+  {项目6链接}       → https://github.com/ErgeAIA/claude-code-bootstrap
   {品牌语录}        → "我走过的弯路，你不必再走！"
   {座右铭}          → "生命不息，折腾不止"
   {Slogan}          → "AI 不该有门槛" / "把AI从天边拉到手边"
