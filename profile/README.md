@@ -86,7 +86,7 @@
 
 ### [AI Vault](https://ergeaia.github.io/aivault-site)
 
-本地优先的 AI 创作者工作台：统一管理技能、提示词、MCP、ComfyUI 工作流，一键分发到 36+ Agent。
+本地优先的 AI 创作者工作台：统一管理技能、提示词、MCP、ComfyUI 工作流，一键分发到 46+ Agent。
 
 ![Downloads](https://img.shields.io/github/downloads/ErgeAIA/updates-dist/total?style=for-the-badge&color=FF8000)
 
