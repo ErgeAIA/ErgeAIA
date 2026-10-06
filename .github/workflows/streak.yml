@@ -34,7 +34,9 @@ jobs:
           # 配色取自 ThemeVault 004 号主题 opensquilla/ember
           # 底 #1a0f0c / 环 #ff6a2b / 火焰 #ff6a2b / 当前连续数 #ff8047 / 当前连续标签 #ffb638
           # 侧边数字 #ffe9dc / 侧边标签 #e6b49a / 日期 #7fd66a / 描边 #4a2c22 / 侧边文字 #c08a6e
-          url='https://streak-stats.demolab.com?user=ErgeAIA&theme=custom&background=1a0f0c&border=4a2c22&stroke=c08a6e&ring=ff6a2b&fire=ff6a2b&currStreakNum=ff8047&sideNums=ffe9dc&currStreakLabel=ffb638&sideLabels=e6b49a&dates=7fd66a&hide_border=true'
+          # card_width=1000：默认 495 会让卡片只占约 1.7 栏宽、与上方三联卡左右不齐；
+          # 提到 1000 后 SVG 本身够宽，配合 README 里的 width="100%" 即可稳定通栏。
+          url='https://streak-stats.demolab.com?user=ErgeAIA&theme=custom&background=1a0f0c&border=4a2c22&stroke=c08a6e&ring=ff6a2b&fire=ff6a2b&currStreakNum=ff8047&sideNums=ffe9dc&currStreakLabel=ffb638&sideLabels=e6b49a&dates=7fd66a&hide_border=true&card_width=1000'
           mkdir -p dist
           # 服务可能挂掉或限流：先验证拿到的是有效 SVG 再推送，否则跳过本次更新、保留旧图
           if curl -fsSL --retry 2 --retry-delay 5 --max-time 60 "$url" -o dist/streak.svg \

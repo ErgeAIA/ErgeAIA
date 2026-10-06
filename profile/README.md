@@ -132,7 +132,7 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ErgeAIA&theme=radical" width="33%" alt="Top Languages by Repo" />
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ErgeAIA&theme=radical" width="33%" alt="Top Languages by Commit" />
 <br/>
-<img src="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/streak.svg" alt="GitHub 贡献连续天数" />
+<img src="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/streak.svg" width="100%" alt="GitHub 贡献连续天数" />
 
 </div>
 
@@ -192,6 +192,25 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 ## 📝 站点
 
+### 个人主页 · 宝藏二哥AIA
+
+<p align="center">
+  <a href="https://ergeaia.github.io/">
+    <img src="assets/site-preview.png" width="100%" alt="个人主页预览" />
+  </a>
+</p>
+
+<div align="center">
+
+**[个人主页](https://ergeaia.github.io/)** —— AI 时代的普通人之友<br/>
+一人公司 AI 自媒体 · ErgeMD 软件作者 · 内容创作者<br/><br/>
+[![进入主页](https://img.shields.io/badge/进入主页-宝藏二哥AIA-ff6a2b?style=for-the-badge)](https://ergeaia.github.io/)
+[![GitHub](https://img.shields.io/badge/GitHub-ErgeAIA-4a2c22?style=for-the-badge&logo=github&logoColor=ffb638)](https://github.com/ErgeAIA)
+
+</div>
+
+<br/>
+
 ### 写意 · Vibe Coding 参考
 
 <p align="center">
@@ -207,25 +226,6 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 概念 27 · 提示词 55 · 组件 67 · 词条 216 · 示例 42<br/><br/>
 [![访问站点](https://img.shields.io/badge/访问站点-写意-ff6a2b?style=for-the-badge)](https://ergeaia.github.io/xieyi/)
 [![GitHub](https://img.shields.io/badge/GitHub-xieyi-4a2c22?style=for-the-badge&logo=github&logoColor=ffb638)](https://github.com/ErgeAIA/xieyi)
-
-</div>
-
-<br/>
-
-### 个人主页 · 宝藏二哥AIA
-
-<p align="center">
-  <a href="https://ergeaia.github.io/">
-    <img src="assets/site-preview.png" width="100%" alt="个人主页预览" />
-  </a>
-</p>
-
-<div align="center">
-
-**[个人主页](https://ergeaia.github.io/)** —— AI 时代的普通人之友<br/>
-一人公司 AI 自媒体 · ErgeMD 软件作者 · 内容创作者<br/><br/>
-[![进入主页](https://img.shields.io/badge/进入主页-宝藏二哥AIA-ff6a2b?style=for-the-badge)](https://ergeaia.github.io/)
-[![GitHub](https://img.shields.io/badge/GitHub-ErgeAIA-4a2c22?style=for-the-badge&logo=github&logoColor=ffb638)](https://github.com/ErgeAIA)
 
 </div>
 
@@ -283,6 +283,7 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
   维护提示：
   - 区块5 三联卡 / 区块6 图标墙 改 URL 或 id 前必须先在浏览器实测渲染（skillicons 未收录的 id 静默不显示）
+  - 区块5 streak 要通栏需两侧同时满足：生成端 card_width=1000（在 streak.yml 里）+ 展示端 width="100%"（在这里）。只改一侧会退回约 1.7 栏宽
   - 区块5 streak 与 区块7 贪吃蛇均引用 dist 分支；产物缺失时跑 gh workflow run snake.yml / streak.yml
   - 区块8 的 assets/*.png 为人工快照，站点改版后必须手动重截覆盖
   - 区块8 的内容数字（概念/提示词/组件/词条/示例）随站点更新会过期
