@@ -66,9 +66,9 @@ jobs:
           else
             git checkout -q -b dist
           fi
-          # 先清空 publish 目录里的 svg，让 dist 分支内容与本次产物严格一致
-          # （否则上一轮遗留的测试文件会永久留在分支上）
-          rm -f ./*.svg
+          # 只删本 workflow 自己的产物再拷贝，不能用 rm -f ./*.svg ——
+          # 那会连带删掉 streak.yml 推上来的 streak.svg（两个 workflow 共用 dist 分支）
+          rm -f ./github-contribution-grid-snake.svg ./github-contribution-grid-snake-dark.svg
           cp -f ../dist/*.svg .
 
           git add -A
