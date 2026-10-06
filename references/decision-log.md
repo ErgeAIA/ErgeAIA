@@ -35,3 +35,13 @@
 10. 数据区三联卡配色 → 存（作为已知例外） → `github-profile-summary-cards` 的 `theme=radical`（深底 + 粉红标题 + 黄）与 ember 属两个色系，但该服务不支持完整色板覆盖，用户明确选择接受。同服务的 `slateorange` / `maroongold` 是更接近的暖色主题，保留为后续可选项。streak 卡因支持 `theme=custom`，不适用此例外，锁定 ember 色。
 11. `update-readme.yml` 中"Fetch repo stats"步骤（抓 3 个仓库星标写入 `$GITHUB_OUTPUT`） → 存（未改） → 该步骤产出的变量后续步骤从未引用，是死代码，多跑三次 API。清理需改动被禁改的 workflow，按 Permissions 须先向用户确认，故本次仅记录不动。
 12. `Grep`/校验习惯新增 → 新增 → 查外部图片服务收录情况时，用"批量请求 + 逐个单独渲染 + 灰块即缺失"的方式验证，不依赖服务提供的图标列表页（`skillicons.dev/icons` 列表页经 MCP fetch 无法访问）。
+
+## 2026-10-06 · 首次运行事故与修复（两个 workflow 全绿但产物全 404）
+
+13. `snake.yml` 用 `color_A`~`color_E` / `background` 作为 action input 传色 → 改 → snk v3 的合法 input 只有 `entryPoint` / `args` / `github_user_name` / `github_token` / `outputs`，传上述参数会输出 `Unexpected input(s)` 警告并**静默忽略**（run 仍显示 success）。颜色实际写在 `outputs` 每行查询串：`color_snake`、`color_dots`（正好 5 个，顺序 0 贡献→最高）、`palette`。已改用 `Platane/snk/svg-only@v3` + 查询串传色。
+14. `snake.yml` 假定 snk 会自己推分支 → 改 → snk 只把 SVG 写进工作区（日志 `💾 writing to dist/...`），从不推分支，必须自写 git 步骤。**"run 显示 success" 不等于产物存在**，已新增探测步骤与规则 11。
+15. `streak.yml` 用第三方 action `peachris/actions-gg-pages@v4` 推送 → 改 → 该仓库已不存在，run 失败于 `Unable to resolve action peachris/actions-gg-pages, repository not found`。**参考作者（37chengshan）本地仍能跑不代表该依赖可用**——不可照抄他人 workflow 的 action 引用。改为纯 git（`git init` + `fetch origin/dist` + `checkout -B` + `commit` + `push`），刻意不用 force push。
+16. 新增·Permissions 中"不得引入第三方 push action"约束 → 新增 → 依据：上述事故本质是外部 action 仓库消失导致静默或硬失败。纯 git 无外部依赖，是本仓库（零依赖、无包管理器的定位）唯一稳定的选择。
+17. 新增·反直觉约定第 10 条 → 新增 → 页面裂图 ≠ 服务挂。camo 会缓存拉取失败结果。判定顺序：先命令行直连看 HTTP 码与 Content-Type，直连正常而页面裂图即为 camo 缓存，加防缓存参数强制重拉。本次访客徽章即此情形（直连 200/1320B，页面裂图）。
+18. 访客徽章 URL 追加 `&v=2` → 新增 → 强制 camo 重新拉取。已实测该服务忽略未知参数（`&v=2`、`&t=1` 均返回 200/1320B）。
+19. 新增·反直觉约定第 11 条 → 新增 → `dist` 分支产物必须实际探测 HTTP 码，且改配色后要 `Select-String` 确认产物 SVG 内真的写入了目标色值。依据：本次两个 workflow 首跑全绿但三个 URL 全 404，若只看 run 状态会误判为成功。

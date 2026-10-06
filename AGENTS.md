@@ -19,6 +19,8 @@
   | `streak.yml` | `streak.svg` | `dist` 分支 | 每天 05:41 UTC + 手动 |
 
   `snake.yml` 与 `streak.yml` 写同一 `dist` 分支，**cron 必须错开**（当前已错开，勿改成同一分钟），否则并发 push 会互相覆盖产物。
+- **两个 workflow 均只用原生 git 推送，不得引入第三方 push action**。原用 `peachris/actions-gg-pages` 已失效（仓库不存在，报 `Unable to resolve action / repository not found`），改为 `git init` + `fetch origin/dist` + `checkout -B` + `commit` + `push`，**不使用 force push**。
+- **snk v3 的颜色不是 action input**，只能写在 `outputs` 每行的查询串里（`color_snake` / `color_dots`(正好 5 个，0 贡献→最高) / `palette`）。传 `color_A`~`color_E`、`background` 会输出 `Unexpected input(s)` 警告并**静默忽略**。另：snk 只把 SVG 写进工作区，**从不推分支**，推送必须自己写 git 步骤。
 - 不确定某文件是否应入库时：先询问，不要 `git add`。
 
 ## 项目性质与工具链
@@ -81,6 +83,8 @@ GitHub 个人主页 README 仓库（special repo：根目录 README.md 渲染在
    - `skillicons.dev` 未收录的 id **不报错、也不显示**（实测 `comfyui` / `trae` / `codex` / `cursor` / `claude` / `anthropic` / `opencode` 全部缺失，`tauri` 存在）。技术栈因此是"图标墙 + shields.io 徽章"混合结构，不是漏改。
    - `github-profile-summary-cards` 参数拼错不会 404，而是返回一张错误卡片。
 9. **`assets/` 里的截图是快照，不是数据源**：`xieyi-preview.png` / `site-preview.png` 均为人工截取，站点改版后 MUST 手动重截覆盖。写意站与个人主页均**未提供 `og:image`**，无法用站点自身 OG 图替代。
+10. **图片显示裂图 ≠ 服务挂了**：GitHub 的 camo 图片代理会**缓存拉取失败的结果**。判定顺序 MUST 是：先用命令行直连该 URL 看 HTTP 码与 `Content-Type`（`Invoke-WebRequest -Uri ... -UseBasicParsing`）→ 若直连正常而页面裂图，就是 camo 缓存，追加一个防缓存参数（如 `&v=2`，前提是该服务忽略未知参数）让 camo 重新拉取。不要因为页面裂图就去换服务。本仓库的 `update-readme.yml` 每 6 小时提交 `.last-updated` 也是同一个目的：触发 GitHub 重新渲染。
+11. **`dist` 分支产物验证**：改完 workflow 后不能只看 run 显示 `success` 就完事——snk 这类工具**不推分支**，可能 run 全绿但 URL 全 404。必须实际探测三个 URL 的 HTTP 码：`dist/streak.svg`、`dist/github-contribution-grid-snake.svg`、`dist/github-contribution-grid-snake-dark.svg`。同理，改配色后要 `Select-String` 确认产物 SVG 里真的写入了目标色值。
 
 ## 质量与文档指针
 

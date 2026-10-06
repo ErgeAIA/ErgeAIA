@@ -244,10 +244,12 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 <br/>
 
 <!-- ===== 区块10：访问计数 ===== -->
+<!-- v=2 是防缓存参数：GitHub camo 代理会缓存拉取失败的结果，改配色后 URL 变了但
+     camo 仍可能命中旧失败缓存，加一个版本参数可强制其重新拉取。该服务会忽略未知参数 -->
 
 <div align="center">
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ErgeAIA.ErgeAIA&left_color=1a0f0c&right_color=ff6a2b)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ErgeAIA.ErgeAIA&left_color=1a0f0c&right_color=ff6a2b&v=2)
 
 </div>
 
