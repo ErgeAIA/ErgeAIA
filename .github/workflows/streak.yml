@@ -1,11 +1,16 @@
 # 定时抓取 GitHub 贡献连续天数（streak-stats），输出到 dist 分支供 README「数据」区块引用
 #
+# 产物 URL：
+#   https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/streak.svg
+#
 # 采用「workflow 自建抓取 + 推 dist 分支」而非 README 直接外链的原因：
 #   1. 服务不可用 / 限流时保留上一版 SVG，不会出现裂图
 #   2. 配色用 theme=custom 锁定 ember 色板，不受服务主题列表更新影响
 #
-# 注意：与 snake.yml 推送同一 dist 分支，故 cron 刻意错开（snake 03:27 / streak 05:41 UTC），
-#      改成同一分钟会导致并发 push 互相覆盖产物。
+# 实现约束：早期版本用第三方 action peachris/actions-gg-pages 推送，该仓库已不存在
+#          （Unable to resolve action / repository not found），故与 snake.yml 一致改用纯 git。
+#
+# 与 snake.yml 写同一 dist 分支，cron 刻意错开（snake 03:27 / streak 05:41 UTC）避免并发 push。
 
 name: streak-stats
 
@@ -27,7 +32,7 @@ jobs:
         id: fetch
         run: |
           # 配色取自 ThemeVault 004 号主题 opensquilla/ember
-          # 底 #1a0f0c / 环 #ff6a2b / 当前连续数 #ff8047 / 标签 #ffb638
+          # 底 #1a0f0c / 环 #ff6a2b / 火焰 #ff6a2b / 当前连续数 #ff8047 / 当前连续标签 #ffb638
           # 侧边数字 #ffe9dc / 侧边标签 #e6b49a / 日期 #7fd66a / 描边 #4a2c22 / 侧边文字 #c08a6e
           url='https://streak-stats.demolab.com?user=ErgeAIA&theme=custom&background=1a0f0c&border=4a2c22&stroke=c08a6e&ring=ff6a2b&fire=ff6a2b&currStreakNum=ff8047&sideNums=ffe9dc&currStreakLabel=ffb638&sideLabels=e6b49a&dates=7fd66a&hide_border=true'
           mkdir -p dist
@@ -40,12 +45,30 @@ jobs:
             echo "ok=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: push to dist
+      - name: Publish to dist branch
         if: steps.fetch.outputs.ok == 'true'
-        uses: peachris/actions-gg-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: dist
-          keep_files: true
-          commit_message: 'chore: update streak stats'
+        run: |
+          set -euo pipefail
+          mkdir -p publish && cd publish
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+
+          # 先建立/切换到 dist 分支，再覆盖式放入本次产物，避免 checkout 冲突
+          if git ls-remote --exit-code --heads origin dist >/dev/null 2>&1; then
+            git fetch -q origin dist
+            git checkout -q -B dist origin/dist
+          else
+            git checkout -q -b dist
+          fi
+          cp -f ../dist/streak.svg .
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "产物无变化，跳过推送"
+            exit 0
+          fi
+          git commit -q -m "chore: update streak stats"
+          git push -q origin dist
+          echo "streak 图已推送到 dist 分支"

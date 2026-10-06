@@ -1,11 +1,18 @@
-# 定时生成 GitHub 贡献贪吃蛇图，供 README「GitHub 活动」区块引用
+# 定时生成 GitHub 贡献贪吃蛇图，输出到 dist 分支供 README「GitHub 活动」区块引用
 #
-# 产物推送到 dist 分支（snk 默认行为），README 通过 raw.githubusercontent 引用：
+# 产物 URL：
 #   https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake.svg
 #   https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake-dark.svg
 #
-# 注意：本 workflow 只写 dist 分支，不修改 main，也不会与 update-readme.yml 冲突。
-# 首次启用需手动触发一次（gh workflow run snake.yml），dist 分支生成后 README 图片才生效。
+# 两个必须知道的实现约束（都是踩过的坑，勿改）：
+#   1. snk 只把 SVG 写进工作区，**从不推分支**。推送必须自己写 git 步骤。
+#      早期版本误用第三方 action peachris/actions-gg-pages 推送，该仓库已不存在
+#      （报错 Unable to resolve action / repository not found），故改为纯 git。
+#   2. snk v3 的颜色**不是 action input**，只能写在 outputs 每行的查询串里。
+#      传 color_A/color_B/... 会报 "Unexpected input(s)" 并被静默忽略。
+#      color_dots 必须是正好 5 个颜色，顺序为 0 贡献 -> 最高贡献。
+#
+# 与 streak.yml 写同一 dist 分支，cron 刻意错开（snake 03:27 / streak 05:41 UTC）避免并发 push。
 
 name: Generate contribution snake
 
@@ -13,7 +20,7 @@ on:
   schedule:
     # 每天 03:27 UTC —— 避开整点，减少 GitHub Actions 排队延迟
     - cron: '27 3 * * *'
-  workflow_dispatch: # 支持手动触发
+  workflow_dispatch: # 支持手动触发（首次启用时用）
 
 permissions:
   contents: write
@@ -21,22 +28,43 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Generate snake SVG
-        uses: Platane/snk@v3
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # 配色取自 ThemeVault 004 号主题 opensquilla/ember
-          # --bg #1a0f0c / --bg-surface #241512 / --bg-hover #452c23
-          # --accent-deep #c23e12 / --accent #ff6a2b
-          color_A: '1a0f0c'
-          color_B: '241512'
-          color_C: '452c23'
-          color_D: 'c23e12'
-          color_E: 'ff6a2b'
-          background: '1a0f0c'
-          # 只输出这两个文件，其余中间产物不落盘
+          # 浅色底（GitHub 浅色模式）：浅灰 -> 深橙 梯度
+          # 深色底（GitHub 深色模式）：#241512 卡面 -> #ff6a2b 主色
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
+            dist/github-contribution-grid-snake.svg?color_snake=c23e12&color_dots=ebedf0,dfe1e6,ffb638,ff6a2b,c23e12
+            dist/github-contribution-grid-snake-dark.svg?color_snake=ff8047&color_dots=241512,452c23,c23e12,ff6a2b,ffb638
+
+      - name: Publish to dist branch
+        run: |
+          set -euo pipefail
+          mkdir -p publish && cd publish
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+
+          # 先建立/切换到 dist 分支，再覆盖式放入本次产物，避免 checkout 冲突
+          if git ls-remote --exit-code --heads origin dist >/dev/null 2>&1; then
+            git fetch -q origin dist
+            git checkout -q -B dist origin/dist
+          else
+            git checkout -q -b dist
+          fi
+          cp -f ../dist/*.svg .
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "产物无变化，跳过推送"
+            exit 0
+          fi
+          git commit -q -m "chore: update contribution snake"
+          git push -q origin dist
+          echo "贪吃蛇图已推送到 dist 分支"
