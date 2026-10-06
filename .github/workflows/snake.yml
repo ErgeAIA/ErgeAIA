@@ -31,7 +31,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Generate snake SVG
-        uses: Platane/snk/svg-only@v3
+        # 必须用 snk@v3，不能用 snk/svg-only@v3 —— 后者是另一个更快的实现，
+        # 不支持 color_snake / color_dots / palette 这些 options，会静默退回
+        # GitHub 默认色 #1b1f23（深灰），在浅色模式下表现为白底深格。
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
