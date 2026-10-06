@@ -3,7 +3,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=FF8000&center=true&vCenter=true&lines=AI+%E4%B8%8D%E8%AF%A5%E6%9C%89%E9%97%A8%E6%A7%9B+%7C+%E6%88%91%E4%B8%BA%E4%BA%BA%E4%BA%BA++%E4%BA%BA%E4%BA%BA%E4%B8%BA%E6%88%91)](https://github.com/ErgeAIA)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=ff6a2b&center=true&vCenter=true&lines=AI+%E4%B8%8D%E8%AF%A5%E6%9C%89%E9%97%A8%E6%A7%9B+%7C+%E6%88%91%E4%B8%BA%E4%BA%BA%E4%BA%BA++%E4%BA%BA%E4%BA%BA%E4%B8%BA%E6%88%91)](https://github.com/ErgeAIA)
 
 <br/>
 
@@ -14,14 +14,14 @@
 <br/>
 
 <!-- ===== 区块2：社交徽章 ===== -->
-<!-- 使用 for-the-badge 风格，颜色与品牌色系一致 -->
+<!-- 统一 for-the-badge 风格，配色取自 opensquilla/ember 主题 -->
 
 <div align="center">
 
-[![BILIBILI](https://img.shields.io/badge/BILIBILI-宝藏二哥AIA-00D4FF?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/67221461)
-[![ZHIHU](https://img.shields.io/badge/ZHIHU-宝藏二哥AIA-0084FF?style=for-the-badge&logo=zhihu&logoColor=white)](https://www.zhihu.com/people/meli55a/posts)
-[![WECHAT](https://img.shields.io/badge/WECHAT-宝藏二哥AIA-07C160?style=for-the-badge&logo=wechat&logoColor=white)](mailto:ergeaia@gmail.com)
-[![EMAIL](https://img.shields.io/badge/EMAIL-ergeaia@gmail.com-A855F7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ergeaia@gmail.com)
+[![BILIBILI](https://img.shields.io/badge/BILIBILI-宝藏二哥AIA-ff6a2b?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/67221461)
+[![ZHIHU](https://img.shields.io/badge/ZHIHU-宝藏二哥AIA-c23e12?style=for-the-badge&logo=zhihu&logoColor=white)](https://www.zhihu.com/people/meli55a/posts)
+[![WECHAT](https://img.shields.io/badge/WECHAT-宝藏二哥AIA-7fd66a?style=for-the-badge&logo=wechat&logoColor=white)](mailto:ergeaia@gmail.com)
+[![EMAIL](https://img.shields.io/badge/EMAIL-ergeaia@gmail.com-c23e12?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ergeaia@gmail.com)
 
 </div>
 
@@ -54,7 +54,7 @@
 
 本地优先的 AI 创作者工作台：统一管理技能、提示词、MCP、ComfyUI 工作流，一键分发到 46+ Agent。
 
-![Downloads](https://img.shields.io/github/downloads/ErgeAIA/updates-dist/total?style=for-the-badge&color=FF8000)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/updates-dist/total?style=for-the-badge&color=ffb638)
 
 </td>
 <td width="50%">
@@ -63,8 +63,8 @@
 
 Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为可浏览的组件库 + 概念库。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/xieyi?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/xieyi?style=for-the-badge&color=A855F7)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/xieyi?style=for-the-badge&color=ff6a2b)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/xieyi?style=for-the-badge&color=c23e12)
 
 </td>
 </tr>
@@ -75,9 +75,9 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 基于 Tauri 2 + React 19 的 Markdown 桌面阅读器，主打极致渲染与丝滑阅读。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeMD?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeMD?style=for-the-badge&color=A855F7)
-![Downloads](https://img.shields.io/github/downloads/ErgeAIA/ErgeMD/total?style=for-the-badge&color=FF8000)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeMD?style=for-the-badge&color=ff6a2b)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeMD?style=for-the-badge&color=c23e12)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/ErgeMD/total?style=for-the-badge&color=ffb638)
 
 </td>
 <td width="50%">
@@ -86,9 +86,9 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 跨平台文件哈希校验工具（Tauri 2 + Rust + React），本地优先、零上传、极速批量校验。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeHash?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeHash?style=for-the-badge&color=A855F7)
-![Downloads](https://img.shields.io/github/downloads/ErgeAIA/ErgeHash/total?style=for-the-badge&color=FF8000)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/ErgeHash?style=for-the-badge&color=ff6a2b)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/ErgeHash?style=for-the-badge&color=c23e12)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/ErgeHash/total?style=for-the-badge&color=ffb638)
 
 </td>
 </tr>
@@ -99,9 +99,9 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 基于 Tauri v2 的 llama.cpp 桌面启动器 —— 无需命令行，从零开始本地大模型对话。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/catapult-cn?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/catapult-cn?style=for-the-badge&color=A855F7)
-![Downloads](https://img.shields.io/github/downloads/ErgeAIA/catapult-cn/total?style=for-the-badge&color=FF8000)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/catapult-cn?style=for-the-badge&color=ff6a2b)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/catapult-cn?style=for-the-badge&color=c23e12)
+![Downloads](https://img.shields.io/github/downloads/ErgeAIA/catapult-cn/total?style=for-the-badge&color=ffb638)
 
 </td>
 <td width="50%">
@@ -110,8 +110,8 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 一键拉起 Claude Code 工作环境（Windows PowerShell），可选部署 hooks 工作流。
 
-![Stars](https://img.shields.io/github/stars/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=00D4FF)
-![Updated](https://img.shields.io/github/last-commit/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=A855F7)
+![Stars](https://img.shields.io/github/stars/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=ff6a2b)
+![Updated](https://img.shields.io/github/last-commit/ErgeAIA/claude-code-bootstrap?style=for-the-badge&color=c23e12)
 
 </td>
 </tr>
@@ -121,6 +121,8 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 <!-- ===== 区块5：数据 ===== -->
 <!-- 三联卡：统计 / 仓库语言 / 提交语言（语言用甜甜圈图，比横向条形更易读） -->
+<!-- 配色由该服务 theme 固定，无法锁定 ember 色板，是全页唯一色系例外 -->
+<!-- streak 卡由 .github/workflows/streak.yml 定时抓取到 dist 分支，theme=custom 锁 ember 色 -->
 
 ## 📊 数据
 
@@ -129,6 +131,8 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ErgeAIA&theme=radical" width="33%" alt="GitHub Stats" />
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ErgeAIA&theme=radical" width="33%" alt="Top Languages by Repo" />
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ErgeAIA&theme=radical" width="33%" alt="Top Languages by Commit" />
+<br/>
+<img src="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/streak.svg" alt="GitHub 贡献连续天数" />
 
 </div>
 
@@ -182,10 +186,13 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 <br/>
 
-<!-- ===== 区块8：写意 ===== -->
+<!-- ===== 区块8：站点 ===== -->
 <!-- 整站截图当封面：读者不点进去也能看到站点长什么样 -->
+<!-- 截图为人工快照，站点改版后需手动重截；两站均无 og:image，无法用站点 OG 图替代 -->
 
-## 📝 写意 · Vibe Coding 参考
+## 📝 站点
+
+### 写意 · Vibe Coding 参考
 
 <p align="center">
   <a href="https://ergeaia.github.io/xieyi/">
@@ -200,6 +207,25 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 概念 27 · 提示词 55 · 组件 67 · 词条 216 · 示例 42<br/><br/>
 [![访问站点](https://img.shields.io/badge/访问站点-写意-ff6a2b?style=for-the-badge)](https://ergeaia.github.io/xieyi/)
 [![GitHub](https://img.shields.io/badge/GitHub-xieyi-4a2c22?style=for-the-badge&logo=github&logoColor=ffb638)](https://github.com/ErgeAIA/xieyi)
+
+</div>
+
+<br/>
+
+### 个人主页 · 宝藏二哥AIA
+
+<p align="center">
+  <a href="https://ergeaia.github.io/">
+    <img src="assets/site-preview.png" width="100%" alt="个人主页预览" />
+  </a>
+</p>
+
+<div align="center">
+
+**[个人主页](https://ergeaia.github.io/)** —— AI 时代的普通人之友<br/>
+一人公司 AI 自媒体 · ErgeMD 软件作者 · 内容创作者<br/><br/>
+[![进入主页](https://img.shields.io/badge/进入主页-宝藏二哥AIA-ff6a2b?style=for-the-badge)](https://ergeaia.github.io/)
+[![GitHub](https://img.shields.io/badge/GitHub-ErgeAIA-4a2c22?style=for-the-badge&logo=github&logoColor=ffb638)](https://github.com/ErgeAIA)
 
 </div>
 
@@ -221,7 +247,7 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 <div align="center">
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ErgeAIA.ErgeAIA&left_color=0A1628&right_color=00D4FF)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ErgeAIA.ErgeAIA&left_color=1a0f0c&right_color=ff6a2b)
 
 </div>
 
@@ -242,14 +268,20 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
   {项目4链接}       → https://github.com/ErgeAIA/ErgeHash
   {项目5链接}       → https://github.com/ErgeAIA/catapult-cn
   {项目6链接}       → https://github.com/ErgeAIA/claude-code-bootstrap
+  {个人主页}        → https://ergeaia.github.io/
   {品牌语录}        → "我走过的弯路，你不必再走！"
   {座右铭}          → "生命不息，折腾不止"
   {Slogan}          → "AI 不该有门槛" / "把AI从天边拉到手边"
 
+  品牌色（唯一权威来源：ThemeVault themes/opensquilla/ember/palette.md）：
+  主 #ff6a2b / hover #ff8047 / deep #c23e12 / secondary #ffb638
+  ok #7fd66a / bg #1a0f0c / card #241512
+  文本 #ffe9dc / muted #e6b49a / dim #c08a6e
+  旧色 #00D4FF / #A855F7 / #0A1628 / #FF8000 已于 2026-10-06 全部退役，不得再用
+
   维护提示：
-  - 区块5 数据卡 / 区块6 图标墙 / 区块7 贪吃蛇 均由外部服务或定时任务生成，改 URL 时先实测能否渲染
-  - 区块6 技术栈图标 id 必须逐个验证（skillicons 对未收录的 id 会静默不渲染）
-  - 区块7 贪吃蛇首次启用需手动触发 .github/workflows/snake.yml，dist 分支生成后图片才生效
-  - 区块8 的 assets/xieyi-preview.png 需站点改版后手动重新截图
+  - 区块5 三联卡 / 区块6 图标墙 改 URL 或 id 前必须先在浏览器实测渲染（skillicons 未收录的 id 静默不显示）
+  - 区块5 streak 与 区块7 贪吃蛇均引用 dist 分支；产物缺失时跑 gh workflow run snake.yml / streak.yml
+  - 区块8 的 assets/*.png 为人工快照，站点改版后必须手动重截覆盖
   - 区块8 的内容数字（概念/提示词/组件/词条/示例）随站点更新会过期
 -->

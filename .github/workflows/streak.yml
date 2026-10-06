@@ -1,0 +1,51 @@
+# 定时抓取 GitHub 贡献连续天数（streak-stats），输出到 dist 分支供 README「数据」区块引用
+#
+# 采用「workflow 自建抓取 + 推 dist 分支」而非 README 直接外链的原因：
+#   1. 服务不可用 / 限流时保留上一版 SVG，不会出现裂图
+#   2. 配色用 theme=custom 锁定 ember 色板，不受服务主题列表更新影响
+#
+# 注意：与 snake.yml 推送同一 dist 分支，故 cron 刻意错开（snake 03:27 / streak 05:41 UTC），
+#      改成同一分钟会导致并发 push 互相覆盖产物。
+
+name: streak-stats
+
+on:
+  schedule:
+    # 每天 05:41 UTC
+    - cron: '41 5 * * *'
+  workflow_dispatch: # 支持手动触发（首次启用时用）
+
+permissions:
+  contents: write
+
+jobs:
+  streak:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: fetch streak.svg
+        id: fetch
+        run: |
+          # 配色取自 ThemeVault 004 号主题 opensquilla/ember
+          # 底 #1a0f0c / 环 #ff6a2b / 当前连续数 #ff8047 / 标签 #ffb638
+          # 侧边数字 #ffe9dc / 侧边标签 #e6b49a / 日期 #7fd66a / 描边 #4a2c22 / 侧边文字 #c08a6e
+          url='https://streak-stats.demolab.com?user=ErgeAIA&theme=custom&background=1a0f0c&border=4a2c22&stroke=c08a6e&ring=ff6a2b&fire=ff6a2b&currStreakNum=ff8047&sideNums=ffe9dc&currStreakLabel=ffb638&sideLabels=e6b49a&dates=7fd66a&hide_border=true'
+          mkdir -p dist
+          # 服务可能挂掉或限流：先验证拿到的是有效 SVG 再推送，否则跳过本次更新、保留旧图
+          if curl -fsSL --retry 2 --retry-delay 5 --max-time 60 "$url" -o dist/streak.svg \
+             && grep -q '<svg' dist/streak.svg \
+             && [ "$(wc -c < dist/streak.svg)" -gt 500 ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: push to dist
+        if: steps.fetch.outputs.ok == 'true'
+        uses: peachris/actions-gg-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: dist
+          keep_files: true
+          commit_message: 'chore: update streak stats'
