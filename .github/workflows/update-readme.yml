@@ -20,18 +20,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch repo stats
-        id: stats
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # 获取各仓库星标数
-          for repo in ErgeAIA-skills ErgeMD catapult-cn; do
-            stars=$(curl -s -H "Authorization: token $GH_TOKEN" \
-              "https://api.github.com/repos/ErgeAIA/$repo" | jq -r '.stargazers_count')
-            echo "${repo}_stars=$stars" >> $GITHUB_OUTPUT
-          done
-
       - name: Update timestamp
         run: |
           echo "<!-- Last updated: $(date -u +'%Y-%m-%d %H:%M UTC') -->" > .last-updated

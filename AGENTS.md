@@ -1,6 +1,8 @@
 # AGENTS.md
 
-本文件是本仓库（GitHub: ErgeAIA/ErgeAIA，本地 D:\Workspace\ErgeAIA）中人类与任何 Agent 之间的合作协议。规则对所有 Agent 生效，不限于特定工具。
+本文件是本仓库（GitHub: ErgeAIA/ErgeAIA）中人类与任何 Agent 之间的合作协议。规则对所有 Agent 生效，不限于特定工具。
+
+> **脱敏约定**：本文件会渲染到公开主页，MUST NOT 写入任何本地绝对路径（盘符、用户名、本地目录结构）。需要指代用户本地项目时，只写**项目名**；本地路径与查色方法等操作性细节放 Agent 记忆，不入库。
 
 ## Permissions（权限边界）
 
@@ -64,7 +66,7 @@ GitHub 个人主页 README 仓库（special repo：根目录 README.md 渲染在
 1. **双 README 同步**：根 `README.md` 是部署目标；`profile/README.md` 是编辑/预览副本。内容修改 MUST 同时落两份，并以 `git diff --no-index profile/README.md README.md` 无输出作为完成标准（**不要用 `diff` 命令**，PowerShell 下恒假阳性，详见命令表）。当前编辑主战场是根 `README.md`，改完后镜像到 `profile/README.md`。
 2. **bot 提交噪音**：提交历史中大量 `chore: refresh README stats` 是 github-actions[bot] 的自动提交（每 6 小时一次），不代表任何人的工作内容；分析历史时必须过滤。
 3. **数据永远不要写死**：shields.io 徽章实时查询 GitHub API，星标/下载量等数字 MUST NOT 手工写入 README。
-4. **徽章规范**：统一 `style=for-the-badge`；品牌色取自 **ThemeVault 004 号主题 `opensquilla/ember`**，唯一权威来源是 `D:\Workspace\Code\ThemeVault\themes\opensquilla\ember\palette.md`（报编号 → 查 `INDEX.json` 的 `theme.number` → 读对应 `palette.md`）：
+4. **徽章规范**：统一 `style=for-the-badge`；品牌色取自用户的主题色板库项目 **ThemeVault** 中的 004 号主题 `opensquilla/ember`（该项目的本地路径与查色流程见 Agent 记忆，不写入本仓库）：
 
    | 语义角色 | 色值 | README 中的用途 |
    |---|---|---|
@@ -76,17 +78,21 @@ GitHub 个人主页 README 仓库（special repo：根目录 README.md 渲染在
    | `--bg` / `--card` | `#1a0f0c` / `#241512` | 深色背景、贪吃蛇底色、streak 底色、访客徽章左色 |
    | `--text` / `--text-muted` / `--text-dim` | `#ffe9dc` / `#e6b49a` / `#c08a6e` | streak 文字三档 |
 
-   旧色 `#00D4FF`（青）/ `#A855F7`（紫）/ `#0A1628` / `#FF8000` **已于 2026-10-06 全量退役**，不得再出现。`#FF8000` 原本的"点缀色"职责由 `--accent-secondary` 与 `--accent` 接手。
-   **唯一色系例外**：数据区三联卡用 `github-profile-summary-cards` 的 `theme=radical`（深底 + 粉红标题 + 黄），该服务配色由主题固定、无法锁定 ember 色板，用户已知悉并接受。streak 卡**不受此限**——它支持 `theme=custom`，MUST 填 ember 色。
+   **禁用的旧色**：`#00D4FF`、`#A855F7`、`#0A1628`、`#FF8000` — 不得再出现在本仓库任何文件中（含注释）。
+   数据区三联卡用 `theme=date_night`：其底色 `#170f0c` 与 `--bg` 几乎一致，是该服务里与 ember 最协调的主题；换主题前 MUST 先比对底色再定。streak 卡支持 `theme=custom`，MUST 填 ember 色。
 5. **占位符清单**：根 `README.md` 末尾的 HTML 注释维护着全部可替换文案（社交链接、称呼、项目链接、语录）。修改文案 MUST 先对照该清单，并保持清单与正文一致。
 6. **`Green-Wall/` 是独立仓库**：origin 为 ErgeAIA/Green-Wall（fork 自 Codennnn/Green-Wall），仅是本地克隆，与本仓库无版本关联。在其中的一切工作遵循其自身仓库的规则，不得将任何改动带入本仓库提交。
 7. **AI Vault 的下载数据在 `ErgeAIA/updates-dist`**：release 发布于独立发行仓库 updates-dist，`aivault-site` 仅是官网仓库。AI Vault 卡的下载数徽章 MUST 指向 updates-dist，不得"纠正"回 aivault-site。
 8. **外部图片 URL 必须先实测再落盘**：本仓库没有任何能离线验证图片渲染的手段，写进 README 的每个第三方图片 URL 都必须先在浏览器实际渲染确认。已知两个静默失效陷阱：
    - `skillicons.dev` 未收录的 id **不报错、也不显示**（实测 `comfyui` / `trae` / `codex` / `cursor` / `claude` / `anthropic` / `opencode` 全部缺失，`tauri` 存在）。技术栈因此是"图标墙 + shields.io 徽章"混合结构，不是漏改。
    - `github-profile-summary-cards` 参数拼错不会 404，而是返回一张错误卡片。
+   - `shields.io` 的 `logo=` 用错 slug **静默不显示图标**，徽章本身仍正常 200。实测：`deepseek` / `anthropic` 存在，`qoder` / `codebuddy` 不存在。
+   - `github-profile-summary-cards` 有速率限制，短时间并发请求多张卡会返回 `ERROR!!! Cards are temporarily rate limited` 卡片（不是 404）。预览时 MUST 逐张请求并在请求之间留间隔。
 9. **`assets/` 里的截图是快照，不是数据源**：`xieyi-preview.png` / `site-preview.png` 均为人工截取，站点改版后 MUST 手动重截覆盖。写意站与个人主页均**未提供 `og:image`**，无法用站点自身 OG 图替代。
 10. **图片显示裂图 ≠ 服务挂了**：GitHub 的 camo 图片代理会**缓存拉取失败的结果**。判定顺序 MUST 是：先用命令行直连该 URL 看 HTTP 码与 `Content-Type`（`Invoke-WebRequest -Uri ... -UseBasicParsing`）→ 若直连正常而页面裂图，就是 camo 缓存，追加一个防缓存参数（如 `&v=2`，前提是该服务忽略未知参数）让 camo 重新拉取。不要因为页面裂图就去换服务。本仓库的 `update-readme.yml` 每 6 小时提交 `.last-updated` 也是同一个目的：触发 GitHub 重新渲染。
 11. **`dist` 分支产物验证**：改完 workflow 后不能只看 run 显示 `success` 就完事——snk 这类工具**不推分支**，可能 run 全绿但 URL 全 404。必须实际探测三个 URL 的 HTTP 码：`dist/streak.svg`、`dist/github-contribution-grid-snake.svg`、`dist/github-contribution-grid-snake-dark.svg`。同理，改配色后要 `Select-String` 确认产物 SVG 里真的写入了目标色值。
+12. **AGENTS.md 只放规则，不放日志**：本文件是**规则**文件，不是工作记录。凡"给人类阅读的过程性内容"——改版叙事、踩坑经过、方案取舍理由、日期化的变更描述——MUST 写进 `references/` 下的专门文档（决策存改删 → `references/decision-log.md`；主题色板全量对照 → `references/brand-palette.md`），本文件只留"必须怎么做 / 禁止怎么做"的可执行条款。判断标准：这句话明天还成立且能约束行为 → 留本文件；只对本次改动有意义 → 进 `references/`。
+13. **公开仓库不写本地路径**：本文件与 `references/` 全部会渲染到 GitHub 公开主页，MUST NOT 出现盘符、用户名或本地目录结构。需要指代用户本地项目时只写**项目名**（如"用户的主题色板库项目 ThemeVault"）；本地绝对路径、查色命令等操作性细节放 Agent 记忆，不入库。
 
 ## 质量与文档指针
 

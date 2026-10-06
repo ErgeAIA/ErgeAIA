@@ -128,9 +128,9 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ErgeAIA&theme=radical" width="33%" alt="GitHub Stats" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ErgeAIA&theme=radical" width="33%" alt="Top Languages by Repo" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ErgeAIA&theme=radical" width="33%" alt="Top Languages by Commit" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ErgeAIA&theme=date_night" width="33%" alt="GitHub Stats" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ErgeAIA&theme=date_night" width="33%" alt="Top Languages by Repo" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ErgeAIA&theme=date_night" width="33%" alt="Top Languages by Commit" />
 <br/>
 <img src="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/streak.svg" width="100%" alt="GitHub 贡献连续天数" />
 
@@ -160,6 +160,9 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 ![Claude](https://img.shields.io/badge/Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Cursor](https://img.shields.io/badge/Cursor-ff6a2b?style=for-the-badge)
 ![Trae](https://img.shields.io/badge/Trae-c23e12?style=for-the-badge)
+![Qoder](https://img.shields.io/badge/Qoder-ff6a2b?style=for-the-badge)
+![CodeBuddy](https://img.shields.io/badge/CodeBuddy-ff8047?style=for-the-badge)
+![DeepSeek%20Harness](https://img.shields.io/badge/DeepSeek%20Harness-c23e12?style=for-the-badge&logo=deepseek&logoColor=white)
 ![Open%20Code](https://img.shields.io/badge/Open%20Code-ffb638?style=for-the-badge)
 ![Codex](https://img.shields.io/badge/Codex-ff8047?style=for-the-badge)
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-ff6a2b?style=for-the-badge)
@@ -177,9 +180,9 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake.svg">
-  <img alt="GitHub 贡献贪吃蛇动画" src="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake.svg?v=2">
+  <img alt="GitHub 贡献贪吃蛇动画" src="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake.svg?v=2" width="100%">
 </picture>
 
 </div>
@@ -282,9 +285,12 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
   旧色 #00D4FF / #A855F7 / #0A1628 / #FF8000 已于 2026-10-06 全部退役，不得再用
 
   维护提示：
-  - 区块5 三联卡 / 区块6 图标墙 改 URL 或 id 前必须先在浏览器实测渲染（skillicons 未收录的 id 静默不显示）
+  - 区块5 三联卡 / 区块6 图标墙 改 URL 或 id 前必须先在浏览器实测渲染（skillicons 未收录的 id 静默不显示；shields.io 的 logo= 用错 slug 同样静默不显示）
+  - 三联卡用 theme=date_night：其底色 #170f0c 与品牌 --bg #1a0f0c 几乎一致，是该服务里与 ember 最协调的主题。改主题前先比对底色
+  - 该服务有速率限制，短时间并发请求多张卡会返回 ERROR!!! 卡片。预览时逐张请求、之间留间隔
   - 区块5 streak 要通栏需两侧同时满足：生成端 card_width=1000（在 streak.yml 里）+ 展示端 width="100%"（在这里）。只改一侧会退回约 1.7 栏宽
   - 区块5 streak 与 区块7 贪吃蛇均引用 dist 分支；产物缺失时跑 gh workflow run snake.yml / streak.yml
+  - 区块7 贪吃蛇的 ?v=2 是防缓存参数：snk 颜色参数修正后 URL 不变，camo 会继续供旧图。改了配色就把 v 往上加
   - 区块8 的 assets/*.png 为人工快照，站点改版后必须手动重截覆盖
   - 区块8 的内容数字（概念/提示词/组件/词条/示例）随站点更新会过期
 -->

@@ -50,3 +50,14 @@
 22. `snake.yml` 改用 `Platane/snk/svg-only@v3`（图快） → 改 → 换回 `Platane/snk@v3`。`svg-only` 是另一个更快的实现，不支持 `color_snake`/`color_dots`/`palette`。
 23. `snake.yml` 发布步骤用 `rm -f ./*.svg` 清理旧产物 → 改 → 只删两个 snake 文件名。依据：snake 与 streak 共用 `dist` 分支，通配清空会把 `streak.svg` 一并删除（已实际发生，dist 分支一度只剩 2 个文件）。该步骤本是为清理测试变体引入的，属于自己制造的问题。
 24. 产物新增"每次改动后核对文件清单"的自检 → 新增 → 依据：#23 的误删是靠 `git ls-tree --name-only origin/dist` 发现的，run 状态与 HTTP 200 都不能发现"文件被删但服务正常"这类问题。
+
+## 2026-10-06 · 脱敏分流、配色收口、工具补全
+
+25. AGENTS.md 内的本地绝对路径（本仓库路径、ThemeVault 色板表路径） → 删 → 改为只写项目名「ThemeVault」，并在 Permissions 顶部新增脱敏约定、在反直觉约定新增第 13 条「公开仓库不写本地路径」。查色路径与流程移入 Agent 记忆。**Why**：AGENTS.md 随 README 一起渲染到公开主页，暴露盘符与本地目录结构等于泄露用户机器布局。
+26. AGENTS.md 规则 4 里的日期化叙述与「用户已知悉并接受」 → 删 → 改为 timeless 的可执行条款（禁用的旧色清单、色系例外结论），叙事性内容移入 `references/brand-palette.md`。**Why**：规则文件应只承载「必须怎么做/禁止怎么做」，过程性内容属日志。
+27. 新增 `references/brand-palette.md` → 新增 → 承接从 AGENTS.md 外移的色板全量、贪吃蛇配色推导、退役色映射、AI 工具徽章配色、三联卡主题选型对比。AGENTS.md 新增第 12 条固化「AGENTS.md 只放规则、不放日志」的判断标准（明天还成立且能约束行为 → 留规则文件；只对本次改动有意义 → 进 references/）。
+28. 数据区三联卡 `theme=radical` → 改 → `theme=date_night`。**Why**：radical 的粉红标题 `#fe428e` 与 ember 橙属两个色系（当初选它是基于旧品牌紫，色系例外的前提已不成立）。逐个提取 4 个候选主题的底色比对，date_night 底色 `#170f0c` 与 `--bg #1a0f0c` 仅差 R=3、标题 `#e1b2a2` 与 `--text-muted #e6b49a` 极接近，是唯一视觉上能与 streak 卡连成同一块表面的选项。
+29. 贪吃蛇「全黑」→ 改 → 非新 bug，是 `%23` 修复前的旧渲染被 camo / 页面缓存供出。已加 `?v=2` 防缓存参数强制重拉，并在 README 维护提示与 AGENTS.md 中记录「snk 配色变更后必须递增 v」。
+30. AI 工具新增 Qoder / CodeBuddy / DeepSeek Harness → 新增 → 均用 shields.io 文字徽章（skillicons 未收录）。实测 logo slug：`deepseek` 存在、`qoder` 与 `codebuddy` 不存在（shields.io 对错误 slug 静默不显示图标，徽章仍 200）。
+31. AGENTS.md 第 8 条新增两个静默失效陷阱 → 新增 → shields.io `logo=` 错误 slug 静默失效；`github-profile-summary-cards` 有速率限制，并发多张返回 `ERROR!!! Cards are temporarily rate limited` 卡片而非 404。
+32. `.github/workflows/update-readme.yml` 的「Fetch repo stats」步骤 → 删 → 该步骤抓 3 个仓库星标写入 `$GITHUB_OUTPUT`，但后续步骤从未引用，属死代码，每 6 小时白跑 3 次 GitHub API。**依据**：用户 2026-10-06 明确授权清理；该文件此前受 Permissions「禁改」约束，本次为唯一一次经用户许可的改动。清理后 workflow 只剩「更新 .last-updated」+「有变化才提交」两步，功能不变。
