@@ -42,8 +42,14 @@ jobs:
           # 浅色底（GitHub 浅色模式）：浅灰 -> 深橙 梯度
           # 深色底（GitHub 深色模式）：#241512 卡面 -> #ff6a2b 主色
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=c23e12&color_dots=ebedf0,dfe1e6,ffb638,ff6a2b,c23e12
-            dist/github-contribution-grid-snake-dark.svg?color_snake=ff8047&color_dots=241512,452c23,c23e12,ff6a2b,ffb638
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg
+            dist/t-plain.svg
+            dist/t-palette-light.svg?palette=github-light
+            dist/t-palette-dark.svg?palette=github-dark
+            dist/t-raw.svg?color_snake=ff6a2b&color_dots=ebedf0,dfe1e6,ffb638,ff6a2b,c23e12
+            dist/t-hash.svg?color_snake=%23ff6a2b&color_dots=%23ebedf0,%23dfe1e6,%23ffb638,%23ff6a2b,%23c23e12
+            dist/t-name.svg?color_snake=orange
 
       - name: Publish to dist branch
         run: |
@@ -61,6 +67,9 @@ jobs:
           else
             git checkout -q -b dist
           fi
+          # 先清空 publish 目录里的 svg，让 dist 分支内容与本次产物严格一致
+          # （否则上一轮遗留的测试文件会永久留在分支上）
+          rm -f ./*.svg
           cp -f ../dist/*.svg .
 
           git add -A
