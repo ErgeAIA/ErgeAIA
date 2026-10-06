@@ -84,7 +84,7 @@ GitHub 个人主页 README 仓库（special repo：根目录 README.md 渲染在
 6. **`Green-Wall/` 是独立仓库**：origin 为 ErgeAIA/Green-Wall（fork 自 Codennnn/Green-Wall），仅是本地克隆，与本仓库无版本关联。在其中的一切工作遵循其自身仓库的规则，不得将任何改动带入本仓库提交。
 7. **AI Vault 的下载数据在 `ErgeAIA/updates-dist`**：release 发布于独立发行仓库 updates-dist，`aivault-site` 仅是官网仓库。AI Vault 卡的下载数徽章 MUST 指向 updates-dist，不得"纠正"回 aivault-site。
 8. **外部图片 URL 必须先实测再落盘**：本仓库没有任何能离线验证图片渲染的手段，写进 README 的每个第三方图片 URL 都必须先在浏览器实际渲染确认。已知两个静默失效陷阱：
-   - `skillicons.dev` 未收录的 id **不报错、也不显示**（实测 `comfyui` / `trae` / `codex` / `cursor` / `claude` / `anthropic` / `opencode` 全部缺失，`tauri` 存在）。技术栈因此是"图标墙 + shields.io 徽章"混合结构，不是漏改。
+   - `skillicons.dev` 未收录的 id **不报错、也不显示**（实测缺失：`comfyui` / `trae` / `codex` / `cursor` / `claude` / `anthropic` / `opencode` / `qoder` / `codebuddy` / `deepseek` / `deepseekharness` / `harness`；`tauri` 存在）。该站收录范围是传统开发技术栈，**AI 编程工具基本没有**，因此"图标墙 + shields.io 文字徽章"混合结构是刻意设计，不是漏改。
    - `github-profile-summary-cards` 参数拼错不会 404，而是返回一张错误卡片。
    - `shields.io` 的 `logo=` 用错 slug **静默不显示图标**，徽章本身仍正常 200。实测：`deepseek` / `anthropic` 存在，`qoder` / `codebuddy` 不存在。
    - `github-profile-summary-cards` 有速率限制，短时间并发请求多张卡会返回 `ERROR!!! Cards are temporarily rate limited` 卡片（不是 404）。预览时 MUST 逐张请求并在请求之间留间隔。
