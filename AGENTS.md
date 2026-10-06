@@ -21,6 +21,8 @@
   `snake.yml` 与 `streak.yml` 写同一 `dist` 分支，**cron 必须错开**（当前已错开，勿改成同一分钟），否则并发 push 会互相覆盖产物。
 - **两个 workflow 均只用原生 git 推送，不得引入第三方 push action**。原用 `peachris/actions-gg-pages` 已失效（仓库不存在，报 `Unable to resolve action / repository not found`），改为 `git init` + `fetch origin/dist` + `checkout -B` + `commit` + `push`，**不使用 force push**。
 - **snk v3 的颜色不是 action input**，只能写在 `outputs` 每行的查询串里（`color_snake` / `color_dots`(正好 5 个，0 贡献→最高) / `palette`）。传 `color_A`~`color_E`、`background` 会输出 `Unexpected input(s)` 警告并**静默忽略**。另：snk 只把 SVG 写进工作区，**从不推分支**，推送必须自己写 git 步骤。
+- **snk 颜色参数的 hex 必须写成 `%23`（URL 编码的 `#`）**：`?color_snake=ff6a2b&color_dots=ebedf0,...` 会被**静默丢弃**、产物退回 GitHub 默认色 `#1b1f23`（深灰，浅色模式下表现为白底深格）；正确写法是 `?color_snake=%23ff6a2b&color_dots=%23ebedf0,...`。run 仍显示 success、日志也无任何警告，只能靠比对产物内的 hex 值发现。判定必须用**锚定 `#` 的严格正则**（`#[0-9a-fA-F]{6}`）——不锚定时会匹配到文件其他位置而产生假阳性。
+- **两个 workflow 共用 `dist` 分支时，清理产物只能删自己那几个文件名**。禁止 `rm -f ./*.svg`，那会连带删掉另一个 workflow 推送的文件（本次已踩：snake 清空后把 `streak.svg` 删了）。同理，每次改动产物集合后 MUST `git ls-tree --name-only origin/dist` 核对文件清单。
 - 不确定某文件是否应入库时：先询问，不要 `git add`。
 
 ## 项目性质与工具链
