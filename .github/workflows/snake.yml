@@ -41,15 +41,14 @@ jobs:
           # 配色取自 ThemeVault 004 号主题 opensquilla/ember
           # 浅色底（GitHub 浅色模式）：浅灰 -> 深橙 梯度
           # 深色底（GitHub 深色模式）：#241512 卡面 -> #ff6a2b 主色
+          # 关键：每个 hex 必须写成 %23（URL 编码的 #），否则整个颜色参数被**静默丢弃**，
+          # 产物退回 GitHub 默认色 #1b1f23。实测对比：
+          #   ?color_snake=ff6a2b&color_dots=ebedf0,...        -> 失效（裸 hex）
+          #   ?color_snake=%23ff6a2b&color_dots=%23ebedf0,...  -> 生效
+          # color_dots 必须是正好 5 个，顺序为 0 贡献 -> 最高贡献
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
-            dist/t-plain.svg
-            dist/t-palette-light.svg?palette=github-light
-            dist/t-palette-dark.svg?palette=github-dark
-            dist/t-raw.svg?color_snake=ff6a2b&color_dots=ebedf0,dfe1e6,ffb638,ff6a2b,c23e12
-            dist/t-hash.svg?color_snake=%23ff6a2b&color_dots=%23ebedf0,%23dfe1e6,%23ffb638,%23ff6a2b,%23c23e12
-            dist/t-name.svg?color_snake=orange
+            dist/github-contribution-grid-snake.svg?color_snake=%23c23e12&color_dots=%23ebedf0,%23dfe1e6,%23ffb638,%23ff6a2b,%23c23e12
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23ff8047&color_dots=%23241512,%23452c23,%23c23e12,%23ff6a2b,%23ffb638
 
       - name: Publish to dist branch
         run: |
