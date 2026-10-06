@@ -40,41 +40,7 @@
 
 <br/>
 
-<!-- ===== 区块4：技术栈徽章 ===== -->
-
-## 技术栈
-
-<!-- 工具 & 框架 -->
-
-![Tauri](https://img.shields.io/badge/Tauri-2-FFC131?style=for-the-badge&logo=tauri&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-DEA584?style=for-the-badge&logo=rust&logoColor=white)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-
-<!-- AI 工具 -->
-
-![Claude](https://img.shields.io/badge/Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
-![Cursor](https://img.shields.io/badge/Cursor-111827?style=for-the-badge)
-![Trae](https://img.shields.io/badge/Trae-00D4FF?style=for-the-badge)
-![Open%20Code](https://img.shields.io/badge/Open%20Code-00A67E?style=for-the-badge)
-![Codex](https://img.shields.io/badge/Codex-412991?style=for-the-badge)
-![AI Coding](https://img.shields.io/badge/AI%20Coding-2563EB?style=for-the-badge)
-![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-9333EA?style=for-the-badge)
-
-<!-- 领域 & 工具 -->
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![ComfyUI](https://img.shields.io/badge/ComfyUI-111827?style=for-the-badge)
-
-<br/>
-
-<!-- ===== 区块5：精选项目 ===== -->
+<!-- ===== 区块4：精选项目 ===== -->
 
 ## 精选项目
 
@@ -153,32 +119,93 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 <br/>
 
-<!-- ===== 区块6：GitHub 统计 ===== -->
+<!-- ===== 区块5：数据 ===== -->
+<!-- 三联卡：统计 / 仓库语言 / 提交语言（语言用甜甜圈图，比横向条形更易读） -->
 
-## GitHub 统计
+## 📊 数据
 
 <div align="center">
 
-<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api?username=ErgeAIA&show_icons=true&theme=shades-of-purple&hide_border=true&bg_color=0A1628&title_color=00D4FF&icon_color=A855F7&text_color=C0C0C0" />
-&nbsp;&nbsp;
-<img height="170" src="https://my-github-stats-mu-eight.vercel.app/api/top-langs/?username=ErgeAIA&layout=compact&theme=shades-of-purple&hide_border=true&bg_color=0A1628&title_color=00D4FF&text_color=C0C0C0" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ErgeAIA&theme=radical" width="33%" alt="GitHub Stats" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ErgeAIA&theme=radical" width="33%" alt="Top Languages by Repo" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ErgeAIA&theme=radical" width="33%" alt="Top Languages by Commit" />
 
 </div>
 
 <br/>
 
-<!-- ===== 区块7：贡献热力图 ===== -->
+<!-- ===== 区块6：技能与工具 ===== -->
+<!-- 技术栈用 skillicons 图标墙；AI 工具 skillicons 未收录，保留 shields.io 徽章 -->
+
+## 🛠️ 技能与工具
+
+**技术栈**
 
 <div align="center">
 
-<!-- ghchart - 自定义品牌颜色 -->
-![ErgeAIA's GitHub Contributions](https://ghchart.rshah.org/00D4FF/ErgeAIA)
+<img src="https://skillicons.dev/icons?i=tauri,rust,react,vite,typescript,python,nodejs,html,css,javascript&perline=10" alt="技术栈" />
 
 </div>
 
 <br/>
 
-<!-- ===== 区块8：座右铭 / 品牌语录 ===== -->
+**AI 工具**
+
+<div align="center">
+
+![Claude](https://img.shields.io/badge/Claude-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
+![Cursor](https://img.shields.io/badge/Cursor-ff6a2b?style=for-the-badge)
+![Trae](https://img.shields.io/badge/Trae-c23e12?style=for-the-badge)
+![Open%20Code](https://img.shields.io/badge/Open%20Code-ffb638?style=for-the-badge)
+![Codex](https://img.shields.io/badge/Codex-ff8047?style=for-the-badge)
+![ComfyUI](https://img.shields.io/badge/ComfyUI-ff6a2b?style=for-the-badge)
+
+</div>
+
+<br/>
+
+<!-- ===== 区块7：GitHub 活动 ===== -->
+<!-- 贪吃蛇贡献图：由 .github/workflows/snake.yml 定时生成并推送到 dist 分支 -->
+<!-- 用 <picture> 跟随 GitHub 深/浅色主题切换；配色取自 opensquilla/ember 主题 -->
+
+## 🐍 GitHub 活动
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake.svg">
+  <img alt="GitHub 贡献贪吃蛇动画" src="https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake.svg" width="100%">
+</picture>
+
+</div>
+
+<br/>
+
+<!-- ===== 区块8：写意 ===== -->
+<!-- 整站截图当封面：读者不点进去也能看到站点长什么样 -->
+
+## 📝 写意 · Vibe Coding 参考
+
+<p align="center">
+  <a href="https://ergeaia.github.io/xieyi/">
+    <img src="assets/xieyi-preview.png" width="100%" alt="写意站点预览" />
+  </a>
+</p>
+
+<div align="center">
+
+**[写意 Xieyi](https://ergeaia.github.io/xieyi/)** —— 以意运码，码落而器成<br/>
+用准确术语讲清组件与需求，让 AI 写出能直接交付的界面<br/><br/>
+概念 27 · 提示词 55 · 组件 67 · 词条 216 · 示例 42<br/><br/>
+[![访问站点](https://img.shields.io/badge/访问站点-写意-ff6a2b?style=for-the-badge)](https://ergeaia.github.io/xieyi/)
+[![GitHub](https://img.shields.io/badge/GitHub-xieyi-4a2c22?style=for-the-badge&logo=github&logoColor=ffb638)](https://github.com/ErgeAIA/xieyi)
+
+</div>
+
+<br/>
+
+<!-- ===== 区块9：座右铭 / 品牌语录 ===== -->
 
 <div align="center">
 
@@ -190,7 +217,7 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
 
 <br/>
 
-<!-- ===== 区块9：访问计数 ===== -->
+<!-- ===== 区块10：访问计数 ===== -->
 
 <div align="center">
 
@@ -218,4 +245,11 @@ Vibe Coding 指南站点：专注产品设计、把实现交给 AI，落地为�
   {品牌语录}        → "我走过的弯路，你不必再走！"
   {座右铭}          → "生命不息，折腾不止"
   {Slogan}          → "AI 不该有门槛" / "把AI从天边拉到手边"
+
+  维护提示：
+  - 区块5 数据卡 / 区块6 图标墙 / 区块7 贪吃蛇 均由外部服务或定时任务生成，改 URL 时先实测能否渲染
+  - 区块6 技术栈图标 id 必须逐个验证（skillicons 对未收录的 id 会静默不渲染）
+  - 区块7 贪吃蛇首次启用需手动触发 .github/workflows/snake.yml，dist 分支生成后图片才生效
+  - 区块8 的 assets/xieyi-preview.png 需站点改版后手动重新截图
+  - 区块8 的内容数字（概念/提示词/组件/词条/示例）随站点更新会过期
 -->

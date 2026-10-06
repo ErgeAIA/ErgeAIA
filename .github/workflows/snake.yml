@@ -1,0 +1,42 @@
+# 定时生成 GitHub 贡献贪吃蛇图，供 README「GitHub 活动」区块引用
+#
+# 产物推送到 dist 分支（snk 默认行为），README 通过 raw.githubusercontent 引用：
+#   https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake.svg
+#   https://raw.githubusercontent.com/ErgeAIA/ErgeAIA/dist/github-contribution-grid-snake-dark.svg
+#
+# 注意：本 workflow 只写 dist 分支，不修改 main，也不会与 update-readme.yml 冲突。
+# 首次启用需手动触发一次（gh workflow run snake.yml），dist 分支生成后 README 图片才生效。
+
+name: Generate contribution snake
+
+on:
+  schedule:
+    # 每天 03:27 UTC —— 避开整点，减少 GitHub Actions 排队延迟
+    - cron: '27 3 * * *'
+  workflow_dispatch: # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate snake SVG
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 配色取自 ThemeVault 004 号主题 opensquilla/ember
+          # --bg #1a0f0c / --bg-surface #241512 / --bg-hover #452c23
+          # --accent-deep #c23e12 / --accent #ff6a2b
+          color_A: '1a0f0c'
+          color_B: '241512'
+          color_C: '452c23'
+          color_D: 'c23e12'
+          color_E: 'ff6a2b'
+          background: '1a0f0c'
+          # 只输出这两个文件，其余中间产物不落盘
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg
