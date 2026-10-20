@@ -5,7 +5,9 @@
 
 ## 唯一权威来源
 
-品牌色取自用户的主题色板库项目 **ThemeVault** 的 **004 号主题 `opensquilla/ember`**。
+品牌色取自用户的主题色板库项目 **ThemeVault** 的 **`opensquilla/ember` 主题**（当前编号 #006）。
+
+> ⚠ 编号会漂：2026-10-20 用户把自用的 erge 两套主题（`#001 dark` / `#002 light`）插到索引最前后，全表重编号，ember 从 #004 变成 #006，#004 现为 crt-green。引用一律以**家族/主题 ID** 为准，编号只作辅助。
 
 查色流程（本地操作，路径不入库）：报主题编号 → 查 ThemeVault 的 `INDEX.json` 定位 `theme.number` → 读 `themes/<family>/<id>/palette.md` 全表。ThemeVault 的本地路径见 Agent 记忆。
 

@@ -66,7 +66,7 @@ GitHub 个人主页 README 仓库（special repo：根目录 README.md 渲染在
 1. **双 README 同步**：根 `README.md` 是部署目标；`profile/README.md` 是编辑/预览副本。内容修改 MUST 同时落两份，并以 `git diff --no-index profile/README.md README.md` 无输出作为完成标准（**不要用 `diff` 命令**，PowerShell 下恒假阳性，详见命令表）。当前编辑主战场是根 `README.md`，改完后镜像到 `profile/README.md`。
 2. **bot 提交噪音**：提交历史中大量 `chore: refresh README stats` 是 github-actions[bot] 的自动提交（每 6 小时一次），不代表任何人的工作内容；分析历史时必须过滤。
 3. **数据永远不要写死**：shields.io 徽章实时查询 GitHub API，星标/下载量等数字 MUST NOT 手工写入 README。
-4. **徽章规范**：统一 `style=for-the-badge`；品牌色取自用户的主题色板库项目 **ThemeVault** 中的 004 号主题 `opensquilla/ember`（该项目的本地路径与查色流程见 Agent 记忆，不写入本仓库）：
+4. **徽章规范**：统一 `style=for-the-badge`；品牌色取自用户的主题色板库项目 **ThemeVault** 中的 `opensquilla/ember` 主题（当前编号 #006；**ThemeVault 会因新主题插到索引最前而整体重编号，认主题名不认编号**）（该项目的本地路径与查色流程见 Agent 记忆，不写入本仓库）：
 
    | 语义角色 | 色值 | README 中的用途 |
    |---|---|---|
